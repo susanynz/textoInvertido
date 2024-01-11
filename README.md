@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://i.imgur.com/UgUbQrL.jpg" alt="Logo mexicarties" width="400" height="auto"/>
+  <img src="https://i.imgur.com/KTCBHVk.jpg" alt="Logo mexicarties" width="400" height="auto"/>
 </p>
 
 # Bienvenid@s al repositorio de Herencia Mexicarties
