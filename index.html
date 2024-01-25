@@ -1,87 +1,105 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Herencia Mexicarties</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  </head>
-  <body>
-     <div class="text-center">
-      <a href="./index.html">
-        <img src="./images/Logo.png" alt="Logo" class="img-fluid" style="max-height: 200px;">
-      </a>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <header class="bg-light py-3">
+        <div class="container">
+            <div class="row">
+                <!-- Botones en la esquina superior izquierda -->
+                <div class="col-md-6">
+                    <button class="btn btn-link">Iniciar Sesión</button>
+                    <div class="dropdown d-inline-block">
+                        <button class="btn btn-link dropdown-toggle" type="button" id="languageDropdown"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Cambio de Idioma
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="languageDropdown">
+                            <a class="dropdown-item" href="#">Español</a>
+                            <a class="dropdown-item" href="#">Inglés</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Barra de navegación en la esquina superior derecha -->
+                <div class="col-md-6 text-md-right">
+                    <nav class="navbar navbar-expand-md navbar-light">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link" href="#">Quiénes Somos</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Tienda</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Preguntas Frecuentes</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Mi Perfil</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Logo en grande en el centro -->
+    <div class="text-center my-4">
+        <img src="./images/Logo.png" alt="Logo Herencia Mexicarties" class="img-fluid" width="150px" height="150px">
     </div>
 
-    <!-- Barra de navegación superior-->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <!-- Barra de navegación centrada en la pantalla -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <div class="container">
             <ul class="navbar-nav mx-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="./quienessomos.html">Quienes somos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./conocemexico.html">Conoce Mexico</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./comoempezar.html">Cómo empezar</a>
-              </li>
+                <li class="nav-item"><a class="nav-link" href="#">Quiénes Somos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Descubre México</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Cómo Comprar</a></li>
             </ul>
-          </div>
         </div>
     </nav>
 
-    <!-- Barra de navegación 2 -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary w100 dropdown-center">
-        <div class="container-fluid text-center">
-          <div class="collapse navbar-collapse" id="navbarButtons">
-            <ul class="navbar-nav mx-auto">
-              <li class="nav-item flex-grow-1 text-center">
-                <a class="nav-link" href="#">Ropa Artesanal</a>
-              </li>
-              <li class="nav-item w100 text-center">
-                <a class="nav-link" href="#">Artesanías</a>
-              </li>
-              <li class="nav-item w100 text-center">
-                <a class="nav-link" href="#">Licores</a>
-              </li>
-              <li class="nav-item w100 text-center">
-                <a class="nav-link" href="#">Artesanos</a>
-              </li>
+    <!-- Barra de navegación color rosa -->
+    <nav class="navbar navbar-expand-md navbar-light" style="background-color: #ff0646;">
+        <div class="container">
+            <ul class="navbar-nav w-100 justify-content-around">
+                <li class="nav-item"><a class="nav-link" href="#" style="color: white;">Artesanías</a></li>
+                <li class="nav-item"><a class="nav-link" href="#" style="color: white;">Licores</a></li>
+                <li class="nav-item"><a class="nav-link" href="#" style="color: white;">Ropa Artesanal</a></li>
+                <li class="nav-item"><a class="nav-link" href="#" style="color: white;">Artesanos</a></li>
             </ul>
-          </div>
         </div>
     </nav>
-  </body>
-    <!-- Carrusel -->
-    <div id="carruselMexico" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="./images/Carrusel1.png" class="d-block w-100" alt="artesanias mexicanas">
-          </div>
-          <div class="carousel-item">
-            <img src="./images/Carrusel2.png" class="d-block w-100" alt="ropa artesanal">
-          </div>
-          <div class="carousel-item">
-            <img src="./images/Carrusel3.png" class="d-block w-100" alt="tequila">
-          </div>
+
+    <!--Carrusel-->
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./images/Carrusel1.png" class="d-block w-100" alt="Artesanias">
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carruselMexico" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carruselMexico" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+        <div class="carousel-item">
+          <img src="./images/Carrusel2.png" class="d-block w-100" alt="Ropa Bordada">
+        </div>
+        <div class="carousel-item">
+          <img src="./images/Carrusel3.png" class="d-block w-100" alt="Tequila">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-    <div class="position-relative text-end">
-        <img src="./images/mapa.png" alt="mapa de México" style="width: auto; height: auto;">
-        <h1 class="position-upright">DESCUBRE MÉXICO</h1>
-    </div>  
-  </body>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Mapa de México -->
+    <p><img src="./images/mapa.png" alt="Mapa de México"></p>
+    <h1>Descubre México</h1>
+
+</body>
+
 </html>
