@@ -1,0 +1,258 @@
+/* Keep the font import if it's being used */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #0c0c0c;
+  background-color: #ffffff;
+  overflow-x: hidden;
+}
+
+/* Remove unused padding classes */
+.layout_padding,
+.layout_padding2,
+.layout_padding2-top,
+.layout_padding2-bottom,
+.layout_padding-top,
+.layout_padding-bottom {
+  padding: 0;
+}
+
+/* Simplify heading_container styles */
+.heading_container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.heading_container h2 {
+  position: relative;
+  margin-bottom: 0;
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+.heading_container h2::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 5px;
+  background: #ff0646;
+  margin: 10px auto;
+}
+
+.heading_container h2 span {
+  color: #ff0646;
+}
+
+.heading_container p {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.heading_container.heading_center {
+  align-items: center;
+  text-align: center;
+}
+
+/* carrusel */
+
+/* Simplify link styles */
+a,
+a:hover,
+a:focus {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover,
+a:focus {
+  color: initial;
+}
+
+/* Simplify button styles */
+.btn,
+.btn:focus {
+  outline: none !important;
+  box-shadow: none;
+}
+
+/* Simplify header styles */
+.hero_area {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header_section {
+  padding: 15px 0;
+}
+
+/* Simplify navigation styles */
+.custom_nav-container .navbar-nav .nav-item .nav-link {
+  padding: 5px 20px;
+  color: #131313;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 5px;
+  transition: all 0.3s;
+  font-weight: 700;
+}
+
+.custom_nav-container .navbar-nav .nav-item .nav-link svg {
+  width: 17px;
+  height: auto;
+  fill: #000000;
+  margin-bottom: 2px;
+}
+
+.custom_nav-container .navbar-nav .nav-item:hover .nav-link,
+.custom_nav-container .navbar-nav .nav-item.active .nav-link {
+  color: #ff0646;
+}
+
+.custom_nav-container .navbar-nav .nav-item:hover .nav-link svg,
+.custom_nav-container .navbar-nav .nav-item.active .nav-link svg {
+  fill: #ff0646;
+}
+
+/* Simplify slider styles */
+.slider_section {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  position: relative;
+  padding: 90px 0 75px 0;
+}
+
+.slider_section .detail-box h1 {
+  font-size: 4.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #000000;
+  line-height: 70px;
+}
+
+.slider_section .detail-box h1 span {
+  color: #ff0646;
+}
+
+.slider_section .detail-box p {
+  font-size: 16px;
+  margin-top: 20px;
+  margin-bottom: 1.5rem;
+}
+
+.slider_section .detail-box a {
+  display: inline-block;
+  padding: 12px 45px;
+  background-color: #ff0646;
+  border: 1px solid #ff0646;
+  color: #ffffff;
+  border-radius: 0;
+  transition: all 0.3s;
+  margin-top: 10px;
+  font-weight: 700;
+}
+
+.slider_section .detail-box a:hover {
+  background-color: transparent;
+  color: #f7444e;
+}
+
+.slider_section .img-box img {
+  width: 100%;
+}
+
+.slider_section .carousel-indicators {
+  position: unset;
+  margin: 0;
+  margin-top: 45px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.slider_section .carousel-indicators li {
+  background-color: #ffffff;
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  opacity: 1;
+}
+
+.slider_section .carousel-indicators li.active {
+  width: 20px;
+  height: 20px;
+  background-color: #f7444e;
+}
+
+/* Simplify product section styles */
+
+.box {
+  position: relative;
+  overflow: hidden;
+}
+
+.img-box {
+  position: relative;
+}
+
+.img-box img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.options {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.box:hover .options {
+  opacity: 1;
+}
+
+.options a {
+  display: block;
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px;
+  margin: 5px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.btn-box {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.btn-box a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff0646;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.options a {
+  background-color: #ff0646;
+  color: #fff;
+  padding: 10px;
+  margin: 5px;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif; /* Agrega el tipo de fuente */
+}
