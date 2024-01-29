@@ -2,13 +2,14 @@
 
 :root {
     --texto1: 'Montserrat', sans-serif;
-    --color1: #F2055C;
+    --color1: #FF0646;  
     --color2: #04B2D9;
-    --color3: #F2ECCE;
+    --color3: #ffff;
     --color4: #F29F05;
     --color5: #F28705;
-    --tam-letra1: 1rem;
     --tam-letra2: 0.75rem;
+    --tam-letra1: 1rem;
+    --tam-letra4: 0.90rem;
     --tam-letra3: 2rem;
 }
 
@@ -26,13 +27,24 @@
     font-weight: bold;
 }
 
+.navbar-nav .nav-link:hover {
+    color: var(--color1);
+    font-weight: bold;
+}
+
 .estilos-navbar {
     background: var(--color3);
 }
 
 .estilos-navbar li a{
+    color: var(--color1);
     font-family: var(--texto1), sans-serif;
     font-size: var(--tam-letra2);
+    font-weight: bold;
+}
+
+.estilos-navbar li a:hover{
+    font-size: var(--tam-letra4);
     font-weight: bold;
 }
 

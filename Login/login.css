@@ -16,23 +16,15 @@
 /*******       BARRA DE NAVEGACIÓN   **********/
 /**********************************************/
 
-.estilo-header {
-    background: var(--color3);
-}
-
-.navbar-nav .nav-link {    
-    font-family: var(--texto1), sans-serif;
-    font-size: var(--tam-letra1);
-    font-weight: bold;
-}
-
+.estilo-header, 
 .estilos-navbar {
     background: var(--color3);
 }
 
-.estilos-navbar li a{
+.navbar-nav .nav-link,
+.estilos-navbar li a {    
     font-family: var(--texto1), sans-serif;
-    font-size: var(--tam-letra2);
+    font-size: var(--tam-letra1);
     font-weight: bold;
 }
 
