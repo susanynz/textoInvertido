@@ -19,3 +19,9 @@ $(document).ready(function() {
  function hideButtons(box) {
     box.querySelector('.options').style.display = 'none';
  }
+
+ $(document).ready(function() {
+   $("#tiendaDropdown").click(function() {
+     $(".dropdown-menu").toggle();
+   });
+ });
