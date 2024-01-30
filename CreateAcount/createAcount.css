@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --texto1: 'Montserrat', sans-serif;
+    --color1: #FF0646;  
+    --color2: #04B2D9;
+    --color3: #ffff;
+    --color4: #F29F05;
+    --color5: #F28705;
+    --tam-letra2: 0.75rem;
+    --tam-letra1: 1rem;
+    --tam-letra4: 0.90rem;
+    --tam-letra3: 2rem;
+}
+
+/**********************************************/
+/*******       BARRA DE NAVEGACIÓN   **********/
+/**********************************************/
+
+.estilo-header {
+    background: var(--color3);
+}
+
+.navbar-nav .nav-link {    
+    font-family: var(--texto1), sans-serif;
+    font-size: var(--tam-letra1);
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--color1);
+    font-weight: bold;
+}
+
+.estilos-navbar {
+    background: var(--color3);
+}
+
+.estilos-navbar li a{
+    color: var(--color1);
+    font-family: var(--texto1), sans-serif;
+    font-size: var(--tam-letra2);
+    font-weight: bold;
+}
+
+.estilos-navbar li a:hover{
+    font-size: var(--tam-letra4);
+    font-weight: bold;
+}
+
+.huacal-number {
+    /*Posicionamiento de circulo*/
+    position: relative;
+    top: -10px;
+    right: -50%;
+    /*Posicionamiento de contenido*/ 
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    /*Estilo*/
+    background-color: #fff;
+    border-radius: 50%;
+    color: var(--color1);
+    font-size: 0.75rem;
+    height: 25px;
+    width: 25px;
+}
+
+
+/**********************************************/
+/*******       CREAR CUENTA          **********/
+/**********************************************/
+
+main {
+    margin: 2rem 0;
+}
+
+.card {
+    border-color: black;
+    border-width: 2px;
+    width: 30rem;
+    transition: 0.5s;
+}
+
+.card:hover {
+    box-shadow: 5px 5px 5px var(--color1)
+}
+
+.card-body {
+    padding: 1rem;
+}
+
+.card-title {
+    font-family: var(--texto1), sans-serif;
+    font-size: var(--tam-letra3);
+    font-weight: bold;
+    padding: 1rem 0;
+}
+
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.btn-block {
+    margin-top: 1rem;
+}
+
+.btn-primary {
+    width: 100%; 
+    margin: 0 auto; 
+    background-color: #D81159;
+    border: 1px solid black;
+    size: 26px;
+    color: white;
+    padding: 0.375rem 0.75rem;
+}
+
+.btn-primary:hover {
+    background-color: #C70B52;
+    border-color: #8F2D56; 
+}
+
+.create-account-link {
+    color: #D81159;
+    text-decoration: none;
+}
+
+.create-account-link:hover {
+    text-decoration: underline;
+}
+
+.privacy-link {
+    font-size: 0.8rem;
+    color: #6c757d;
+    text-decoration: none;
+}
+
+.privacy-link:hover {
+    text-decoration: underline;
+}
