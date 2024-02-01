@@ -8,6 +8,21 @@
     src: url(../fonts/Roboto/RobotoSlab-Regular.ttf);
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --texto1: 'Montserrat', sans-serif;
+    --color1: #FF0646;  
+    --color2: #04B2D9;
+    --color3: #ffff;
+    --color4: #F29F05;
+    --color5: #F28705;
+    --tam-letra2: 0.75rem;
+    --tam-letra1: 1rem;
+    --tam-letra4: 0.90rem;
+    --tam-letra3: 2rem;
+}
+
 h1{
     font-family: roboto;
     padding-top: 50px;
@@ -27,30 +42,59 @@ h5 {
   font-style: italic;
 }
 
-.custom_nav-container .navbar-nav .nav-item .nav-link {
-    padding: 5px 20px;
-    color: #000000;
-    text-align: center;
-    text-transform: uppercase;
-    border-radius: 5px;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;
-    font-weight: 700;
+/*******  BARRA DE NAVEGACIÓN   ********/
+
+.estilo-header {
+  background: var(--color3);
 }
 
-.custom_nav-container .navbar-nav .nav-item .nav-link svg {
-  width: 17px;
-  height: auto;
-  fill: #000000;
-  margin-bottom: 2px;
+.navbar-nav .nav-link {    
+  font-family: var(--texto1), sans-serif;
+  font-size: var(--tam-letra1);
+  font-weight: bold;
 }
 
-.custom_nav-container .navbar-nav .nav-item:hover .nav-link, .custom_nav-container .navbar-nav .nav-item.active .nav-link {
-  color: #FF0646;
+.navbar-nav .nav-link:hover {
+  color: var(--color1);
+  font-weight: bold;
 }
 
-.custom_nav-container .navbar-nav .nav-item:hover .nav-link svg, .custom_nav-container .navbar-nav .nav-item.active .nav-link svg {
-  fill: #FF0646;
+.estilos-navbar {
+  background: var(--color3);
+}
+
+.estilos-navbar li a{
+  color: var(--color1);
+  font-family: var(--texto1), sans-serif;
+  font-size: var(--tam-letra2);
+  font-weight: bold;
+}
+
+.estilos-navbar li a:hover{
+  font-size: var(--tam-letra4);
+  font-weight: bold;
+}
+
+.huacal-number {
+  /*Posicionamiento de circulo*/
+  position: relative;
+  top: -10px;
+  right: -50%;
+  /*Posicionamiento de contenido*/ 
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  /*Estilo*/
+  background-color: #fff;
+  border-radius: 50%;
+  color: var(--color1);
+  font-size: 0.75rem;
+  height: 25px;
+  width: 25px;
+}
+
+.nav-item{
+  text-align: center;
 }
 
 .accordion-item{
@@ -209,4 +253,12 @@ footer {
   margin-top: 10px;
   width: 150px;
   cursor: pointer;
+}
+
+.img-pagos {
+  width: 230px;
+}
+
+.img-pagos-container {
+  padding-top: 20px;
 }
