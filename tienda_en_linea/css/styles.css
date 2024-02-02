@@ -87,6 +87,12 @@ body {
     margin: 0;
 }
 
+.page-header {
+    background-color: #ff0646;
+    color: #fff;
+    text-align: center;
+    padding: 2rem;
+}
 
 h1 {
     text-align: center;
@@ -94,8 +100,25 @@ h1 {
     color: #FF0646;
 }
 
+.heading_container {
+    margin-top: 10px;
+    margin-bottom: 0;
+    align-items: center;
+    text-align: center;
+}
+
+.heading_container h2 span {
+    color: #ff0646;
+}
+
+.heading_container p {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
 #searchBar {
     margin-bottom: 20px;
+    padding: 10px;
 }
 
 .producto {
