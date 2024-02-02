@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --texto1: 'Montserrat', sans-serif;
+    --color1: #F2055C;
+    --color2: #04B2D9;
+    --color3: #F2ECCE;
+    --color4: #F29F05;
+    --color5: #F28705;
+    --tam-letra1: 1rem;
+    --tam-letra2: 0.75rem;
+    --tam-letra3: 2rem;
+}
+
+/**********************************************/
+/*******       BARRA DE NAVEGACIÓN   **********/
+/**********************************************/
+
+.estilo-header,
+.estilos-navbar {
+    background: var(--color3);
+}
+
+.navbar-nav .nav-link,
+.estilos-navbar li a {
+    font-family: var(--texto1), sans-serif;
+    font-size: var(--tam-letra1);
+    font-weight: bold;
+}
+
+.huacal-number {
+    /*Posicionamiento de circulo*/
+    position: relative;
+    top: -10px;
+    right: -50%;
+    /*Posicionamiento de contenido*/
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    /*Estilo*/
+    background-color: #fff;
+    border-radius: 50%;
+    color: var(--color1);
+    font-size: 0.75rem;
+    height: 25px;
+    width: 25px;
+}
+
+/**********************************************/
+/*******       HUACAL                **********/
+/**********************************************/
+
+.titular {
+    /*Posicionamiento de contenido*/
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    /*Diseño de contenido*/
+    background-color: var(--color5);
+    height: 7rem;
+    font-family: var(--texto1), sans-serif;
+    width: 100%;
+}
+
+.titular h2 {
+    font-weight: bold;
+}
+
+.contenedor-principal {
+    padding: 1rem;
+}
+
+/**********************************/
+/**** CONTENEDOR DE PRODUCTOS *****/
+/**********************************/
+
+.contenido-productos {
+    padding: 0 1rem;
+}
+
+
+.product-card {
+    border: 2px solid var(--color1);
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.product-card .card-body {
+    padding: 1rem;
+}
+
+.card-text{
+    text-align: center;
+}
+
+.quantity-selector {
+    align-items: center;
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.quantity-selector .form-control {
+    max-width: 50px;
+    text-align: center;
+}
+
+.price {
+    color: var(--color1);
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.btn-opcion {
+    color: white;
+    background-color: var(--color1);
+    margin: 1rem 0;
+    padding: 0.375rem 0.75rem;
+    size: var(--tam-letra3);
+}
+
+.btn-opcion:hover {
+    background-color: #C70B52;
+    border-color: var(--color1);
+    color: white;
+}
+
+
+
+/*************************************/
+/*****     RESUMEN DE COMPRA     *****/
+/*************************************/
+
+.resumen {
+    border: 2px solid black;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.item-resumen {
+    margin-bottom: 0.5rem;
+}
+
+.total strong {
+    font-size: 1.2rem;
+}
+
+.resumen button {
+    color: white;
+    background-color: var(--color1);
+    margin: 1rem 0;
+    padding: 0.375rem 0.75rem;
+    size: var(--tam-letra3);
+}
+
+.resumen button:hover {
+    background-color: #C70B52;
+    border-color: var(--color1);
+}
