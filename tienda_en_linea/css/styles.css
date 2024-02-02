@@ -75,6 +75,10 @@
     width: 25px;
 }
 
+.nav-item {
+    text-align: center;
+}
+
 
 /*contenido*/
 
@@ -263,4 +267,12 @@ footer {
     margin-top: 10px;
     width: 150px;
     cursor: pointer;
+}
+
+.img-pagos {
+    width: 230px;
+}
+
+.img-pagos-container {
+    padding-top: 20px;
 }
