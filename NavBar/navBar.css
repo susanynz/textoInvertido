@@ -66,7 +66,7 @@
     /*Estilo*/
     background-color: #fff;
     border-radius: 50%;
-    color: var(--color6);
+    color: var(--color1);
     font-size: 0.75rem;
     height: 25px;
     width: 25px;
@@ -110,46 +110,38 @@
 /*******       BANNER CON TÍTULO   **********/
 /**********************************************/
 
-/* Titulo conoce*/
+/* Titulo superior*/
 .heading_container h4 {
   position: relative;
   margin-bottom: 0;
     font-size: 1.5rem;
     font-weight: bold;
   }
-  /* Titulo nuestra familia*/
+  /* Titulo inferior*/
   .heading_container h3 {
+    color: #ff0646;
     position: relative;
     margin-bottom: 0;
     font-size: 2.5rem;
     font-weight: bold;
   }
 
-  /*Centrar Nuestra familia*/
+  /*Centrar titulos*/
   .heading_container.heading_center {
     align-items: center;
     text-align: center;
   }
 
-  /*Guión bajo en nuestra familia*/
+  /*Guión bajo el titulo inferior*/
   .heading_container h3::after {
     content: "";
     display: block;
-    width: 70px;
+    width: 140px;
     height: 5px;
     background: #ff0646;
     margin: 10px auto;
   }
   
-  /* Titulo quienes somos*/
-  .heading_container h2 {
-      position: relative;
-      margin-bottom: 0;
-      font-size: 3.5rem;
-      font-weight: bold;
-    }
-
-
 
   /* Guión bajo en quienes somos
   .heading_container h2::after {
@@ -176,6 +168,14 @@
     .heading_container h3 span {
       color: #ff0646;
     }
+      /* Titulo quienes somos*/
+  /* .heading_container h2 {
+    position: relative;
+    margin-bottom: 0;
+    font-size: 3.5rem;
+    font-weight: bold;
+  } */
+
 
 
 
