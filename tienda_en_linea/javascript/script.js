@@ -110,7 +110,7 @@ function mostrarProductos(productosAMostrar) {
 
     productosAMostrar.slice(0, productosPorPagina).forEach(producto => {
         const productoCard = `
-    <div class="col-md-3 producto">
+    <div class="col-md-3 producto dark-card">
         <div class="card option_container">
             <div class="options">
                 <a class="option1" style="text-decoration: none;" onclick="echarAlHuacal()">

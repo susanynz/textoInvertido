@@ -14,7 +14,7 @@
     --tam-letra1: 1rem;
     --tam-letra4: 0.90rem;
     --tam-letra3: 2rem;
-    --dark-color: #000000;
+    --dark-color: #2c2c2c;
     --dark-icon-color: #ffffff;
     --light-color: #ffffff;
     --light-icon-color: #FFDE59;
@@ -380,35 +380,6 @@ body.darkmode .heading_container h3::after {
 
 /*contenido*/
 
-.page-header {
-    background-color: #ff0646;
-    color: #fff;
-    text-align: center;
-    padding: 2rem;
-}
-
-h1 {
-    text-align: center;
-    font-weight: bold;
-    color: #FF0646;
-}
-
-.heading_container {
-    margin-top: 10px;
-    margin-bottom: 0;
-    align-items: center;
-    text-align: center;
-}
-
-.heading_container h2 span {
-    color: #ff0646;
-}
-
-.heading_container p {
-    margin-top: 10px;
-    margin-bottom: 0;
-}
-
 #searchBar {
     margin-bottom: 20px;
     padding: 10px;
@@ -508,6 +479,22 @@ h1 {
 .producto:hover .options {
     display: flex;
     flex-direction: column;
+}
+
+body.darkmode .dark-card {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    border: 1px solid var(--color1);
+    /* Ajusta según sea necesario */
+}
+
+body.darkmode .dark-card .option_container {
+    background-color: var(--dark-color);
+}
+
+body.darkmode .dark-card .card-title,
+body.darkmode .dark-card .card-text {
+    color: var(--light-color);
 }
 
 /*footer*/
