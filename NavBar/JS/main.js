@@ -9,6 +9,10 @@ function store(value){
   localStorage.setItem('darkmode', value);
 }
 
+function toggleDarkMode() {
+  document.body.classList.toggle("darkmode");
+}
+
 //function that indicates if the "darkmode" property exists. It loads the page as we had left it.
 function load(){
   const darkmode = localStorage.getItem('darkmode');
