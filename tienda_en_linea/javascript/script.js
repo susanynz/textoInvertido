@@ -120,7 +120,7 @@ function mostrarProductos(productosAMostrar) {
                     Comprar
                 </a>
             </div>
-            <img src="/tienda_en_linea/Images/logo.png" class="card-img-top" alt="${producto.imagen_alt}">
+            <img src="${producto.imagen_url}" class="card-img-top" alt="${producto.imagen_alt}">
             <div class="card-body">
                 <h5 class="card-title">${producto.nombre}</h5>
                 <p class="card-text">Precio: ${producto.precio} USD</p>
@@ -155,7 +155,7 @@ async function mostrarMasProductos() {
                     Comprar
                 </a>
             </div>
-            <img src="/tienda_en_linea/Images/logo.png" class="card-img-top" alt="${producto.imagen_alt}">
+            <img src="${producto.imagen_url}" class="card-img-top" alt="${producto.imagen_alt}">
             <div class="card-body">
                 <h5 class="card-title">${producto.nombre}</h5>
                 <p class="card-text">Precio: ${producto.precio} USD</p>
