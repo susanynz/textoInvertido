@@ -1,5 +1,5 @@
 const body = document.querySelector('body');
-const btn = document.querySelector('.btn');
+const btn_dark = document.querySelector('.btn_dark');
 const icon = document.querySelector('.btn__icon');
 
 //to save the dark mode use the object "local storage".
@@ -31,7 +31,7 @@ function load(){
 
 load();
 
-btn.addEventListener('click', () => {
+btn_dark.addEventListener('click', () => {
 
   body.classList.toggle('darkmode');
   icon.classList.add('animated');
