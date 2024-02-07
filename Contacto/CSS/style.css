@@ -1,12 +1,4 @@
-/* @font-face {
-    font-family: montserrat;
-    src: url(../fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
-}
 
-@font-face {
-    font-family: roboto;
-    src: url(../fonts/Roboto/RobotoSlab-Regular.ttf);
-} */
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
@@ -27,21 +19,6 @@
     --light-color: #ffffff;
     --light-icon-color: #FFDE59;
     
-}
-
-h1{
-  font-family: var(--texto1), sans-serif;
-    padding-top: 50px;
-}
-
-h3{
-    font-family: montserrat;
-    text-align: center;
-}
-
-h5 {
-    font-family: montserrat;
-    font-size: 10px;
 }
 
 /* ------------ BASE ------------ */
@@ -93,8 +70,6 @@ color: var(--color3);
 color: var(--color1);
 padding: 0.5rem 1rem;
 }
-
-
 
 .nav-item{
   text-align: center;
@@ -324,9 +299,6 @@ opacity: 0;
 
 
 
-
-
-
 /**********************************************/
 /*******       BANNER ROSA CON TÍTULO   **********/
 /**********************************************/
@@ -345,6 +317,7 @@ opacity: 0;
   font-weight: 800;
   font-family: var(--texto1);
   text-align: center;
+  
 }
 
 .inner_page_head .container_fuild {
@@ -424,6 +397,7 @@ main {
   size: 26px;
   color: white;
   padding: 0.375rem 0.75rem;
+  justify-content: center;
 }
 
 .btn-primary:hover {
@@ -466,47 +440,6 @@ label {
   cursor:pointer;  
 }
 
-/* form input {
-    background: #fff;
-    border: solid #ccc 1px;
-    padding: 15px 15px;
-    width: 100%;
-    font-size: 14px;
-    margin-bottom: 20px;
-    line-height: normal;
-}
-
-form textarea {
-    background: #fff;
-    border: solid #ccc 1px;
-    padding: 15px 15px;
-    width: 100%;
-    min-height: 150px;
-    font-size: 14px;
-    margin-bottom: 20px;
-    line-height: normal;
-}
-
-form input[type="submit"] {
-    border: none;
-    padding: 15px 45px;
-    width: auto;
-    font-size: 16px;
-    text-transform: capitalize;
-    line-height: normal;
-    margin: 0 auto;
-    display: flex;
-    background: #333;
-    color: #fff;
-    font-weight: 600;
-    transition: ease all 0.1s;
-}
-
-form input[type="submit"]:hover,
-form input[type="submit"]:focus {
-    background: #FF0646;
-    color: #fff;
-} */
 
 /*******  ACORDEON PREGUNTAS  ********/
 
@@ -520,7 +453,13 @@ form input[type="submit"]:focus {
 padding-top: 50px;
 }
 
+.FAQS{
+  font-family: var(--texto1), sans-serif;
+  font-size: var(--tam-letra3);
+  font-weight: bold;
+  padding-top: 50px;
 
+}
 
 /********* DESCRIPCIÓN  *********/
 .descripcion-content {
