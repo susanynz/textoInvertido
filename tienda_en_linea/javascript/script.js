@@ -137,20 +137,31 @@ function mostrarProductos(productosAMostrar) {
     btnMostrarMas.style.display = productosAMostrar.length > productosMostrados ? 'block' : 'none';
 }
 
-function mostrarMasProductos() {
+async function mostrarMasProductos() {
     const productosContainer = document.getElementById('productosContainer');
+    const response = await fetch('/tienda_en_linea/javascript/productos.csv');
+    const csvData = await response.text();
+    const productos = parseCSV(csvData);
 
     productos.slice(productosMostrados, productosMostrados + productosPorPagina).forEach(producto => {
         const productoCard = `
-      <div class="col-md-3 producto">
-        <div class="card">
-          <img src="${producto.imagen_url}" class="card-img-top" alt="${producto.imagen_alt}">
-          <div class="card-body">
-            <h5 class="card-title">${producto.nombre}</h5>
-            <p class="card-text">Precio: ${producto.precio} USD</p>
-          </div>
+        <div class="col-md-3 producto dark-card">
+        <div class="card option_container">
+            <div class="options">
+                <a class="option1" style="text-decoration: none;" onclick="echarAlHuacal()">
+                    Echar al huacal
+                </a>
+                <a href="" class="option2" style="text-decoration: none;">
+                    Comprar
+                </a>
+            </div>
+            <img src="/tienda_en_linea/Images/logo.png" class="card-img-top" alt="${producto.imagen_alt}">
+            <div class="card-body">
+                <h5 class="card-title">${producto.nombre}</h5>
+                <p class="card-text">Precio: ${producto.precio} USD</p>
+            </div>
         </div>
-      </div>
+    </div>
     `;
 
         productosContainer.innerHTML += productoCard;
