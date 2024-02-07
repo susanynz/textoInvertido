@@ -7,16 +7,11 @@
   --color3: #ffff;
   --color4: #F29F05;
   --color5: #F28705;
+  --color6: #000000;
   --tam-letra2: 0.75rem;
   --tam-letra1: 1rem;
   --tam-letra4: 0.90rem;
   --tam-letra3: 2rem;
-  --color: #9176FF;
-  --dark-color: #2b2b2b;
-  --dark-icon-color: #fff;
-  --light-color: #f7f7f7;
-  --light-icon-color: #FFDE59;
-
 }
 
 /* Titulo quienes somos*/
@@ -84,61 +79,6 @@
   align-items: center;
   text-align: center;
 }
-
-/**********************************************/
-/*******       BARRA DE NAVEGACIÓN   **********/
-/**********************************************/
-
-.estilo-header {
-  background: var(--color3);
-}
-
-.navbar-nav .nav-link {    
-  font-family: var(--texto1), sans-serif;
-  font-size: var(--tam-letra1);
-  font-weight: bold;
-}
-
-.navbar-nav .nav-link:hover {
-  color: var(--color1);
-  font-weight: bold;
-}
-
-.estilos-navbar {
-  background: var(--color3);
-}
-
-.estilos-navbar li a{
-  color: var(--color1);
-  font-family: var(--texto1), sans-serif;
-  font-size: var(--tam-letra2);
-  font-weight: bold;
-}
-
-.estilos-navbar li a:hover{
-  font-size: var(--tam-letra4);
-  font-weight: bold;
-}
-.huacal-number {
-  
-  /*Posicionamiento de circulo*/
-  position: relative;
-  top: -10px;
-  right: -50%;
-  /*Posicionamiento de contenido*/ 
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  /*Estilo*/
-  background-color: #fff;
-  border-radius: 50%;
-  color: var(--color1);
-  font-size: 0.75rem;
-  height: 25px;
-  width: 25px;
-}
-
-/******* SLIDER EQUIPO DESARROLLO HERENCIA MEXICARTIES*****/
 
 
 /*============= SLIDER DE IMAGENES QUIENES SOMOS =======*/

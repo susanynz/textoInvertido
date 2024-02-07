@@ -185,6 +185,14 @@ label {
     cursor:pointer;  
 }
 
+ /*******     FAQS      **********/
+
+ .FAQS{
+    font-family: var(--texto1), sans-serif;
+    text-align: center;
+ }
+
+
   /*******     DESCRPTION SECTION      **********/
   .descripcion-section {
     background-color: #000;

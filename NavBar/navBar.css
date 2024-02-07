@@ -4,6 +4,7 @@
     --texto1: 'Montserrat', sans-serif;
     --color1: #FF0646;  
     --color2: #04B2D9;
+<<<<<<< HEAD
     --color3: #ffff;
     --color4: #F29F05;
     --color5: #F28705;
@@ -14,14 +15,80 @@
     --tam-letra3: 2rem;
 }
 
+=======
+    --color3: #ffffff;
+    --color4: #F29F05;
+    --color5: #F28705;
+    --color6: #000000;
+    --tam-letra1: 0.9rem;
+    --tam-letra2: 0.75rem;
+    --tam-letra4: 0.90rem;
+    --tam-letra3: 2rem;
+    --dark-color: #000000;
+    --dark-icon-color: #ffffff;
+    --light-color: #ffffff;
+    --light-icon-color: #FFDE59;
+}
+
+/* ------------ BASE ------------ */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  align-items: center;
+  background-color: var(--light-color);
+  height: 100vh;
+  justify-content: center;
+  overflow-x: hidden;
+}
+>>>>>>> d9315bdf0239edf1af4db7e01532e8330ac3974e
 
 /**********************************************/
 /*******      BARRA DE NAVEGACIÓN   **********/
 /**********************************************/
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> d9315bdf0239edf1af4db7e01532e8330ac3974e
 .estilo-header {
     background: var(--color3);
 }
 
+<<<<<<< HEAD
+=======
+.options-user {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-end;
+  margin-top: 1rem;
+}
+
+.options-user button {
+  background: none;
+  border: 1px solid var(--color1); 
+  color: var(--color1);
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.options-user button:hover {
+  background-color: var(--color1);
+  color: var(--color3);
+}
+
+.options-user span {
+  color: var(--color1);
+  padding: 0.5rem 1rem;
+}
+
+
+
+>>>>>>> d9315bdf0239edf1af4db7e01532e8330ac3974e
 .nav-item{
     text-align: center;
 }
@@ -38,7 +105,12 @@
 }
 
 .estilos-navbar {
+<<<<<<< HEAD
     background: var(--color3);
+=======
+  background: var(--color3);
+  width: 12rem;
+>>>>>>> d9315bdf0239edf1af4db7e01532e8330ac3974e
 }
 
 .estilos-navbar li a{
@@ -50,7 +122,10 @@
 
 .estilos-navbar li a:hover{
     color: var(--color1);
+<<<<<<< HEAD
     font-size: var(--tam-letra4);
+=======
+>>>>>>> d9315bdf0239edf1af4db7e01532e8330ac3974e
     font-weight: bold;
 }
 
@@ -78,6 +153,182 @@
     font-weight: bold;
 }
 
+<<<<<<< HEAD
+=======
+.btn-options {
+  display: flex;
+  align-items: center;
+}
+
+
+/* -------------- DARKMODE -------------- */
+
+/* -------------- BUTTON -------------- */
+.btn{
+  background-color: #ffffff;
+  width: 4em;
+  height: 2em;
+  border-radius: 1em;
+  padding: 0 0.2em;
+
+  box-shadow: inset 0 2px 40px rgba(255, 255, 255, 0.1),
+              inset 0 4px 4px rgba(255, 254, 254, 0.1),
+              inset 0 -2px 2px rgba(253, 252, 252, 0.1);
+
+              position: relative;
+
+  display: flex;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+.btn__indicator{
+  transition: transform .1s ease;
+}
+
+.btn__icon-container{
+  width: 10%;
+  height: 10%;
+
+  display: flex;
+  justify-content: left;
+  align-items: right;
+}
+
+.btn__icon{
+  color: var(--light-icon-color);
+  font-size: 1rem;
+}
+
+/* -------------- ANIMATION ------------ */
+.btn__icon.animated{
+  animation: spin 0.5s;
+}
+
+@keyframes spin{
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* -------------- DARKMODE -------------- */
+body.darkmode {
+    background-color: var(--dark-color);
+}
+
+body.darkmode .estilo-header {
+    background: var(--dark-color);
+}
+
+body.darkmode .navbar-nav .nav-link {
+    color: var(--light-color);
+}
+
+body.darkmode .navbar-nav .nav-link:hover {
+    color: var(--color1);
+    font-weight: bold;
+}
+
+body.darkmode .huacal-number {
+    color: var(--color1);
+}
+
+body.darkmode .huacal-number:hover {
+    color: var(--color1);
+    font-weight: bold;
+}
+
+body.darkmode .inner_page_head {
+    background: var(--dark-color);
+    color: var(--light-color);
+}
+
+body.darkmode .inner_page_head h3 {
+    color: var(--light-color);
+}
+
+body.darkmode .heading_container h4,
+body.darkmode .heading_container h3 {
+    color: var(--light-color);
+}
+
+body.darkmode .heading_container h3::after {
+    background: var(--light-color);
+}
+
+    /* Otras reglas de estilo para el modo oscuro */
+.darkmode {
+  .product_section h3 span{
+    color: #FF0646;
+  }
+}
+.darkmode {
+  .product_section h4 {
+      color: #ffffff; 
+  }
+}
+.darkmode {
+  .product_section h2 {
+    color: #ffffff;
+  }
+  }
+.darkmode {
+  .product_section p{
+    color: #ffffff;
+  }
+}
+.darkmode .navbar-nav .nav-link {
+  color: #ffffff; /* Cambiar al color blanco en modo oscuro */
+}
+
+.darkmode .navbar-nav .nav-link:hover {
+color: var(--color1);
+font-weight: bold;
+}
+
+.darkmode .btn{
+  box-shadow: inset 0 2px 40px rgba(0,0,0, .3),
+              inset 4px 0 4px rgba(0,0,0, .3),
+              inset 0 -2px 2px rgba(0,0,0, .3);
+}
+
+.darkmode .btn__indicator{
+  transform: translateX(.5em);
+  box-shadow: 0 4px 20px rgba(0,0,0, .3);
+}
+
+.darkmode .btn__icon{
+  color: var(--dark-icon-color);
+}
+
+
+/****************/
+/* BOTON IDIOMA */
+/****************/
+
+.btn-idioma {
+  width: 5em;
+  height: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-idioma img {
+  max-width: 100%;
+  max-height: 100%;
+  transition: opacity 0.3s ease;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+
+
+
+>>>>>>> d9315bdf0239edf1af4db7e01532e8330ac3974e
 
 
 /**********************************************/
@@ -105,6 +356,32 @@
     padding-left: 10px; 
 }
 
+<<<<<<< HEAD
+=======
+/* Reglas para el modo oscuro en el banner rosa con título */
+body.darkmode .inner_page_head {
+  background: #FF0646;
+  color: var(--light-color);
+}
+
+body.darkmode .inner_page_head h3 {
+  color: var(--light-color);
+}
+
+/* Reglas para el modo oscuro en el banner con título */
+body.darkmode .heading_container h4,
+body.darkmode .heading_container h3 {
+  color: var(--light-color);
+}
+
+body.darkmode .heading_container h3::after {
+  background: var(--light-color);
+}
+
+
+
+
+>>>>>>> d9315bdf0239edf1af4db7e01532e8330ac3974e
 
 /**********************************************/
 /*******       BANNER CON TÍTULO   **********/

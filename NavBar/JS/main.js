@@ -9,6 +9,10 @@ function store(value){
   localStorage.setItem('darkmode', value);
 }
 
+function toggleDarkMode() {
+  document.body.classList.toggle("darkmode");
+}
+
 //function that indicates if the "darkmode" property exists. It loads the page as we had left it.
 function load(){
   const darkmode = localStorage.getItem('darkmode');
@@ -47,3 +51,29 @@ btn.addEventListener('click', () => {
     icon.classList.remove('animated');
   }, 500)
 })
+
+/****************************/
+/* Boton para cambiar idioma*/
+/****************************/
+
+const languageButton = document.getElementById('toggleLanguage');
+const languageFlag = document.getElementById('languageFlag');
+
+function toggleFlag() {
+  if (languageFlag.src.includes('mexico.png')) {
+    languageFlag.src = '../Imagenes/eu.png';
+    languageFlag.alt = 'Bandera de Estados Unidos';
+  } else {
+    languageFlag.src = '../Imagenes/mexico.png';
+    languageFlag.alt = 'Bandera de México';
+  }
+}
+
+languageButton.addEventListener('click', (e) => {
+  e.preventDefault();
+  languageFlag.classList.add('hidden');
+  setTimeout(() => {
+    toggleFlag();
+    languageFlag.classList.remove('hidden');
+  }, 100);
+});
