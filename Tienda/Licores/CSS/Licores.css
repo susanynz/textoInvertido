@@ -142,11 +142,33 @@
         filter: saturate(150%);
       }
 
-  .product-thumbnail {
-    margin: 10px;
-    cursor: pointer;
-  }
-  
+      .product-thumbnail {
+        margin: 10px;
+        cursor: pointer;
+        transition: box-shadow 0.3s;
+        position: relative;
+        overflow: hidden;
+      }
+      
+      .product-thumbnail:hover .overlay-text {
+        display: block;
+      }
+      
+      .product-thumbnail .overlay-text {
+        display: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(0, 0, 0, 0.5); /* Cambiado a un sombreado oscuro */
+        padding: 10px 20px;
+        border-radius: 5px;
+        color: #fd0681; /* Color del texto cambiado a blanco */
+        font-size: 14px;
+        cursor: pointer;
+      }
+      
+
   .product-thumbnail img {
     width: 200px;
     height: 200px;
@@ -172,12 +194,18 @@
     height: auto; 
   }
 
+  .darkmode .modal-content {
+    background-color: #333; /* Cambiar el color de fondo del modal en modo oscuro */
+    color: #fff; /* Cambiar el color del texto en el modal en modo oscuro */
+}
+
   /* Estilo para los botones */
   .btn-huacal, .btn btn-primary {
     font-size: 10px;
     padding: 8px 90px;
     white-space: nowrap;
-    text-align: left !important;  
+    text-align: left !important;
+    background-color: #FF0646 !important;  
 }
   
   /* Estilo específico para los botones "Echar al huacal" y "Agregar a la lista de deseos" */
@@ -186,19 +214,7 @@
     padding: 8px 90px; 
     white-space: nowrap;
     text-align: left !important;
+    background-color: #FF0646 !important;
   }
-body.darkmode .dark-card {
-    background-color: var(--dark-color);
-    color: var(--light-color);
-    border: 1px solid var(--color1);
-}
 
-body.darkmode .dark-card .option_container {
-    background-color: var(--dark-color);
-}
-
-body.darkmode .dark-card .card-title,
-body.darkmode .dark-card .card-text {
-    color: var(--light-color);
-}
 
