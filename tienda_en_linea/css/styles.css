@@ -1,80 +1,54 @@
+/*header*/
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
     --texto1: 'Montserrat', sans-serif;
-    --color1: #FF0646;  
+    --color1: #FF0646;
     --color2: #04B2D9;
     --color3: #ffffff;
     --color4: #F29F05;
     --color5: #F28705;
     --color6: #000000;
-    --tam-letra1: 0.9rem;
     --tam-letra2: 0.75rem;
+    --tam-letra1: 1rem;
     --tam-letra4: 0.90rem;
     --tam-letra3: 2rem;
-    --dark-color: #000000;
+    --dark-color: #2c2c2c;
     --dark-icon-color: #ffffff;
     --light-color: #ffffff;
     --light-icon-color: #FFDE59;
 }
 
-/* ------------ BASE ------------ */
-
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-  align-items: center;
-  background-color: var(--light-color);
-  height: 100vh;
-  justify-content: center;
-  overflow-x: hidden;
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--light-color);
 }
+
 
 /**********************************************/
 /*******      BARRA DE NAVEGACIÓN   **********/
 /**********************************************/
-
-
 .estilo-header {
     background: var(--color3);
 }
 
-.options-user {
-  display: flex;
-  gap: 0.5rem;
-  justify-content: flex-end;
-  margin-top: 1rem;
-}
-
-.options-user button {
-  background: none;
-  border: 1px solid var(--color1); 
-  color: var(--color1);
-  padding: 0.5rem 1rem;
-  cursor: pointer;
-}
-
-.options-user button:hover {
-  background-color: var(--color1);
-  color: var(--color3);
-}
-
-.options-user span {
-  color: var(--color1);
-  padding: 0.5rem 1rem;
-}
-
-
-
-.nav-item{
+.nav-item {
     text-align: center;
 }
 
-.navbar-nav .nav-link {    
+.navbar-nav .nav-link {
     font-family: var(--texto1), sans-serif;
     font-size: var(--tam-letra1);
     font-weight: bold;
@@ -86,19 +60,19 @@ body{
 }
 
 .estilos-navbar {
-  background: var(--color3);
-  width: 12rem;
+    background: var(--color3);
 }
 
-.estilos-navbar li a{
+.estilos-navbar li a {
     color: var(--color6);
     font-family: var(--texto1), sans-serif;
     font-size: var(--tam-letra2);
     font-weight: bold;
 }
 
-.estilos-navbar li a:hover{
+.estilos-navbar li a:hover {
     color: var(--color1);
+    font-size: var(--tam-letra4);
     font-weight: bold;
 }
 
@@ -107,7 +81,7 @@ body{
     position: relative;
     top: -10px;
     right: -50%;
-    /*Posicionamiento de contenido*/ 
+    /*Posicionamiento de contenido*/
     align-items: center;
     display: flex;
     justify-content: center;
@@ -120,67 +94,69 @@ body{
     width: 25px;
 }
 
-.huacal-number:hover{
+.huacal-number:hover {
     color: var(--color1);
     font-size: 0.79rem;
     font-weight: bold;
 }
 
-.btn-options {
-  display: flex;
-  align-items: center;
-}
-
-
 /* -------------- DARKMODE -------------- */
 
 /* -------------- BUTTON -------------- */
-.btn{
-  background-color: #ffffff;
-  width: 4em;
+.btn {
+    background-color: #ffffff;
+    width: 4em;
+    height: 2em;
+    border-radius: 0, em;
+    padding: 0 0.2em;
+
+    box-shadow: inset 0 2px 40px rgba(255, 255, 255, 0.1),
+        inset 0 4px 4px rgba(255, 254, 254, 0.1),
+        inset 0 -2px 2px rgba(253, 252, 252, 0.1);
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+.btn__indicator {
+    /* background-color: #fff;
+  width: 2em;
   height: 2em;
-  border-radius: 1em;
-  padding: 0 0.2em;
+  border-radius: 5%;
 
-  box-shadow: inset 0 2px 40px rgba(255, 255, 255, 0.1),
-              inset 0 4px 4px rgba(255, 254, 254, 0.1),
-              inset 0 -2px 2px rgba(253, 252, 252, 0.1);
+  position: absolute;
 
-              position: relative;
-
-  display: flex;
-  align-items: center;
-
-  cursor: pointer;
+  box-shadow: 0 4px 4px rgba(0,0,0, .2); */
+    transition: transform .1s ease;
 }
 
-.btn__indicator{
-  transition: transform .1s ease;
+.btn__icon-container {
+    width: 10%;
+    height: 10%;
+
+    display: flex;
+    justify-content: left;
+    align-items: right;
 }
 
-.btn__icon-container{
-  width: 10%;
-  height: 10%;
-
-  display: flex;
-  justify-content: left;
-  align-items: right;
-}
-
-.btn__icon{
-  color: var(--light-icon-color);
-  font-size: 1rem;
+.btn__icon {
+    color: var(--light-icon-color);
+    font-size: 1rem;
 }
 
 /* -------------- ANIMATION ------------ */
-.btn__icon.animated{
-  animation: spin 0.5s;
+.btn__icon.animated {
+    animation: spin 0.5s;
 }
 
-@keyframes spin{
-  to {
-    transform: rotate(360deg);
-  }
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 /* -------------- DARKMODE -------------- */
@@ -228,78 +204,81 @@ body.darkmode .heading_container h3::after {
     background: var(--light-color);
 }
 
-    /* Otras reglas de estilo para el modo oscuro */
+/* Otras reglas de estilo para el modo oscuro */
 .darkmode {
-  .product_section h3 span{
-    color: #FF0646;
-  }
+
+    /* Cambiar el color del texto específico en modo oscuro */
+    .product_section h3 span {
+        color: #FF0646;
+    }
 }
+
 .darkmode {
-  .product_section h4 {
-      color: #ffffff; 
-  }
+    .product_section h4 {
+        color: #ffffff;
+        /* Cambiar al color blanco en modo oscuro */
+    }
 }
+
 .darkmode {
-  .product_section h2 {
-    color: #ffffff;
-  }
-  }
-.darkmode {
-  .product_section p{
-    color: #ffffff;
-  }
+    .product_section h2 {
+        color: #ffffff;
+    }
 }
+
+.darkmode {
+    .product_section p {
+        color: #ffffff;
+    }
+}
+
 .darkmode .navbar-nav .nav-link {
-  color: #ffffff; /* Cambiar al color blanco en modo oscuro */
+    color: #ffffff;
+    /* Cambiar al color blanco en modo oscuro */
 }
 
 .darkmode .navbar-nav .nav-link:hover {
-color: var(--color1);
-font-weight: bold;
+    color: var(--color1);
+    font-weight: bold;
 }
 
-.darkmode .btn{
-  box-shadow: inset 0 2px 40px rgba(0,0,0, .3),
-              inset 4px 0 4px rgba(0,0,0, .3),
-              inset 0 -2px 2px rgba(0,0,0, .3);
+.darkmode .btn {
+    box-shadow: inset 0 2px 40px rgba(0, 0, 0, .3),
+        inset 4px 0 4px rgba(0, 0, 0, .3),
+        inset 0 -2px 2px rgba(0, 0, 0, .3);
 }
 
-.darkmode .btn__indicator{
-  transform: translateX(.5em);
-  box-shadow: 0 4px 20px rgba(0,0,0, .3);
+.darkmode .btn__indicator {
+    transform: translateX(.5em);
+    /* background-color: var(--dark-color); */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, .3);
 }
 
-.darkmode .btn__icon{
-  color: var(--dark-icon-color);
+.darkmode .btn__icon {
+    color: var(--dark-icon-color);
 }
-
 
 /****************/
 /* BOTON IDIOMA */
 /****************/
 
 .btn-idioma {
-  width: 5em;
-  height: 3em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    width: 5em;
+    height: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .btn-idioma img {
-  max-width: 100%;
-  max-height: 100%;
-  transition: opacity 0.3s ease;
+    max-width: 100%;
+    max-height: 100%;
+    transition: opacity 0.3s ease;
 }
 
 .hidden {
-  opacity: 0;
+    opacity: 0;
 }
-
-
-
-
-
 
 /**********************************************/
 /*******       BANNER ROSA CON TÍTULO   **********/
@@ -310,45 +289,42 @@ font-weight: bold;
     text-align: center;
     color: #fff;
     /*Tamaño de la barra*/
-    padding-top: 30px; 
-    padding-bottom: 20px; 
+    padding-top: 30px;
+    padding-bottom: 20px;
 }
 
 .inner_page_head h3 {
-    font-size: 32px; /* Tamaño del título*/
+    font-size: 32px;
+    /* Tamaño del título*/
     font-weight: 800;
     font-family: var(--texto1);
     text-align: center;
 }
 
 .inner_page_head .container_fuild {
-    padding-right: 10px; 
-    padding-left: 10px; 
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
 /* Reglas para el modo oscuro en el banner rosa con título */
 body.darkmode .inner_page_head {
-  background: #FF0646;
-  color: var(--light-color);
+    background: #FF0646;
+    color: var(--light-color);
 }
 
 body.darkmode .inner_page_head h3 {
-  color: var(--light-color);
+    color: var(--light-color);
 }
 
 /* Reglas para el modo oscuro en el banner con título */
 body.darkmode .heading_container h4,
 body.darkmode .heading_container h3 {
-  color: var(--light-color);
+    color: var(--light-color);
 }
 
 body.darkmode .heading_container h3::after {
-  background: var(--light-color);
+    background: var(--light-color);
 }
-
-
-
-
 
 /**********************************************/
 /*******       BANNER CON TÍTULO   **********/
@@ -356,38 +332,39 @@ body.darkmode .heading_container h3::after {
 
 /* Titulo superior*/
 .heading_container h4 {
-  position: relative;
-  margin-bottom: 0;
+    position: relative;
+    margin-bottom: 0;
     font-size: 1.5rem;
     font-weight: bold;
-  }
-  /* Titulo inferior*/
-  .heading_container h3 {
+}
+
+/* Titulo inferior*/
+.heading_container h3 {
     color: #ff0646;
     position: relative;
     margin-bottom: 0;
     font-size: 2.5rem;
     font-weight: bold;
-  }
+}
 
-  /*Centrar titulos*/
-  .heading_container.heading_center {
+/*Centrar titulos*/
+.heading_container.heading_center {
     align-items: center;
     text-align: center;
-  }
+}
 
-  /*Guión bajo el titulo inferior*/
-  .heading_container h3::after {
+/*Guión bajo el titulo inferior*/
+.heading_container h3::after {
     content: "";
     display: block;
     width: 140px;
     height: 5px;
     background: #ff0646;
     margin: 10px auto;
-  }
-  
+}
 
-  /* Guión bajo en quienes somos
+
+/* Guión bajo en quienes somos
   .heading_container h2::after {
     content: "";
     display: block;
@@ -413,13 +390,136 @@ body.darkmode .heading_container h3::after {
       color: #ff0646;
     }
       /* Titulo quienes somos*/
-  /* .heading_container h2 {
+/* .heading_container h2 {
     position: relative;
     margin-bottom: 0;
     font-size: 3.5rem;
     font-weight: bold;
   } */
 
+
+
+/*contenido*/
+
+#searchBar {
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+
+.producto {
+    border: 1px solid #ddd;
+    padding: 10px;
+    /*margin: 10px;*/
+    text-align: center;
+    display: inline-block;
+    position: relative;
+}
+
+
+.producto .card .option_container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff0646;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .2s;
+    transform: translateY(100%);
+}
+
+.producto:hover .option_container {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.producto .card .options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.producto .card .options a {
+    margin: 5px 0;
+    padding: 8px 15px;
+    border-radius: 30px;
+    width: 165px;
+    text-align: center;
+    transition: all .3s;
+}
+
+.producto .card .options .option1,
+.producto .card .options .option2 {
+    background-color: transparent;
+    border: 1px solid transparent;
+    color: #ffffff;
+}
+
+.producto .card:hover .options .option1,
+.producto .card:hover .options .option2 {
+    background-color: #ff0646;
+    border: 1px solid #ff0646;
+    color: #ffffff;
+}
+
+.producto .card .options .option1:hover,
+.producto .card .options .option2:hover {
+    background-color: transparent;
+    color: #ff0646;
+}
+
+.producto .card .card-img-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 215px;
+}
+
+.producto .box .card-img-top img {
+    max-width: 100%;
+    max-height: 160px;
+    transition: all .3s;
+}
+
+.producto .card {
+    text-align: center;
+}
+
+.producto .options {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.producto:hover .options {
+    display: flex;
+    flex-direction: column;
+}
+
+body.darkmode .dark-card {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    border: 1px solid var(--color1);
+}
+
+body.darkmode .dark-card .option_container {
+    background-color: var(--dark-color);
+}
+
+body.darkmode .dark-card .card-title,
+body.darkmode .dark-card .card-text {
+    color: var(--light-color);
+}
+
+/*footer*/
 
 /**********************************************/
 /*******      INICIO Pie d pagina   **********/
@@ -428,8 +528,9 @@ body.darkmode .heading_container h3::after {
 /********* section de descriopcion  *********/
 .descripcion-content {
     max-width: 1200px;
-    margin:  0 auto;
+    margin: 0 auto;
 }
+
 .descripcion-section {
     background-color: #000;
     color: #fff;
@@ -438,6 +539,7 @@ body.darkmode .heading_container h3::after {
     margin-top: 0 rem;
     width: 100%;
 }
+
 .descripcion-section img {
     max-width: 100%;
     height: auto;
@@ -446,36 +548,39 @@ body.darkmode .heading_container h3::after {
     cursor: pointer;
 }
 
-  /* Titulo tejemos*/
-  .descripcion-section h4 {
+/* Titulo tejemos*/
+.descripcion-section h4 {
     position: relative;
     margin-bottom: 0;
-      font-size: 1.5rem;
-      font-weight: bold;
-    }
-    /* Titulo descubre*/
-    .descripcion-section h3 {
-      position: relative;
-      margin-bottom: 0;
-      font-size: 1.5rem;
-      font-weight: bold;
-    }
-  
-    .descripcion-section.descripcion-content {
-      align-items: center;
-      text-align: center;
-    }
-  
-    /*Guión bajo titulo descubre*/
-    h3:after {
-      content: "";
-      display: block;
-      width: 100%; /* Ajustar el ancho al 100% */
-      max-width: 500px; /* Establecer un ancho máximo */
-      height: 5px;
-      background: #ff0646;
-      margin: 10px auto;
-  }
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Titulo descubre*/
+.descripcion-section h3 {
+    position: relative;
+    margin-bottom: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.descripcion-section.descripcion-content {
+    align-items: center;
+    text-align: center;
+}
+
+/*Guión bajo titulo descubre*/
+h3:after {
+    content: "";
+    display: block;
+    width: 100%;
+    /* Ajustar el ancho al 100% */
+    max-width: 500px;
+    /* Establecer un ancho máximo */
+    height: 5px;
+    background: #ff0646;
+    margin: 10px auto;
+}
 
 
 /************** footer ***************/
@@ -535,15 +640,12 @@ footer {
 
 .img-pagos {
     width: 230px;
-  }
+}
 
-  .img-pagos-container {
+.img-pagos-container {
     padding-top: 20px;
-  }
+}
 
 /**********************************************/
 /*******      FINAL de Pie d pagina   **********/
 /**********************************************/
-
-
-  
