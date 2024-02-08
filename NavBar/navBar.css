@@ -4,18 +4,6 @@
     --texto1: 'Montserrat', sans-serif;
     --color1: #FF0646;  
     --color2: #04B2D9;
-<<<<<<< HEAD
-    --color3: #ffff;
-    --color4: #F29F05;
-    --color5: #F28705;
-    --color6: black;
-    --tam-letra2: 0.75rem;
-    --tam-letra1: 1rem;
-    --tam-letra4: 0.90rem;
-    --tam-letra3: 2rem;
-}
-
-=======
     --color3: #ffffff;
     --color4: #F29F05;
     --color5: #F28705;
@@ -45,22 +33,14 @@ body{
   justify-content: center;
   overflow-x: hidden;
 }
->>>>>>> d9315bdf0239edf1af4db7e01532e8330ac3974e
 
 /**********************************************/
 /*******      BARRA DE NAVEGACIÓN   **********/
 /**********************************************/
-<<<<<<< HEAD
-=======
-
-
->>>>>>> d9315bdf0239edf1af4db7e01532e8330ac3974e
 .estilo-header {
     background: var(--color3);
 }
 
-<<<<<<< HEAD
-=======
 .options-user {
   display: flex;
   gap: 0.5rem;
@@ -88,7 +68,6 @@ body{
 
 
 
->>>>>>> d9315bdf0239edf1af4db7e01532e8330ac3974e
 .nav-item{
     text-align: center;
 }
@@ -105,12 +84,8 @@ body{
 }
 
 .estilos-navbar {
-<<<<<<< HEAD
-    background: var(--color3);
-=======
   background: var(--color3);
   width: 12rem;
->>>>>>> d9315bdf0239edf1af4db7e01532e8330ac3974e
 }
 
 .estilos-navbar li a{
@@ -122,10 +97,7 @@ body{
 
 .estilos-navbar li a:hover{
     color: var(--color1);
-<<<<<<< HEAD
     font-size: var(--tam-letra4);
-=======
->>>>>>> d9315bdf0239edf1af4db7e01532e8330ac3974e
     font-weight: bold;
 }
 
@@ -153,8 +125,6 @@ body{
     font-weight: bold;
 }
 
-<<<<<<< HEAD
-=======
 .btn-options {
   display: flex;
   align-items: center;
@@ -328,7 +298,6 @@ font-weight: bold;
 
 
 
->>>>>>> d9315bdf0239edf1af4db7e01532e8330ac3974e
 
 
 /**********************************************/
@@ -356,8 +325,6 @@ font-weight: bold;
     padding-left: 10px; 
 }
 
-<<<<<<< HEAD
-=======
 /* Reglas para el modo oscuro en el banner rosa con título */
 body.darkmode .inner_page_head {
   background: #FF0646;
@@ -381,7 +348,6 @@ body.darkmode .heading_container h3::after {
 
 
 
->>>>>>> d9315bdf0239edf1af4db7e01532e8330ac3974e
 
 /**********************************************/
 /*******       BANNER CON TÍTULO   **********/
