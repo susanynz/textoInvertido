@@ -77,3 +77,11 @@ languageButton.addEventListener('click', (e) => {
     languageFlag.classList.remove('hidden');
   }, 100);
 });
+
+// Volver a inicio con el logo del pie de página. 
+document.querySelector('.descripcion-section img').addEventListener('click', function() {
+  window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+  });
+});

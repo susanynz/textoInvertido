@@ -296,76 +296,199 @@ font-weight: bold;
   opacity: 0;
 }
 
+/**********************************************/
+/*******       HUACAL                **********/
+/**********************************************/
 
 /**********************************************/
-/*******       LOGIN                 **********/
+/*******       BANNER ROSA CON TÍTULO   **********/
 /**********************************************/
 
-
-main {
-    margin: 2rem;
+.inner_page_head {
+  background: #FF0646;
+  text-align: center;
+  color: #fff;
+  /*Tamaño de la barra*/
+  padding-top: 30px; 
+  padding-bottom: 20px; 
 }
 
-.card {
-    width: 30rem;
-    transition: 0.5s;
+.inner_page_head h3 {
+  font-size: 32px; /* Tamaño del título*/
+  font-weight: 800;
+  font-family: var(--texto1);
+  text-align: center;
 }
 
-.card:hover {
-    box-shadow: 5px 5px 5px var(--color1)
+.inner_page_head .container_fuild {
+  padding-right: 10px; 
+  padding-left: 10px; 
 }
 
-.card-body {
+/* Reglas para el modo oscuro en el banner rosa con título */
+body.darkmode .inner_page_head {
+background: #FF0646;
+color: var(--light-color);
+}
+
+body.darkmode .inner_page_head h3 {
+color: var(--light-color);
+}
+
+/* Reglas para el modo oscuro en el banner con título */
+body.darkmode .heading_container h4,
+body.darkmode .heading_container h3 {
+color: var(--light-color);
+}
+
+body.darkmode .heading_container h3::after {
+background: var(--light-color);
+}
+
+
+
+
+
+/**********************************************/
+/*******       BANNER CON TÍTULO   **********/
+/**********************************************/
+
+/* Titulo superior*/
+.heading_container h4 {
+position: relative;
+margin-bottom: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+/* Titulo inferior*/
+.heading_container h3 {
+  color: #ff0646;
+  position: relative;
+  margin-bottom: 0;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+/*Centrar titulos*/
+.heading_container.heading_center {
+  align-items: center;
+  text-align: center;
+}
+
+/*Guión bajo el titulo inferior*/
+.heading_container h3::after {
+  content: "";
+  display: block;
+  width: 140px;
+  height: 5px;
+  background: #ff0646;
+  margin: 10px auto;
+}
+
+.contenedor-principal {
     padding: 1rem;
 }
 
-.card-title {
-    font-family: var(--texto1), sans-serif;
-    font-size: var(--tam-letra3);
-    font-weight: bold;
-    padding: 1rem 0;
+/**********************************/
+/**** CONTENEDOR DE PRODUCTOS *****/
+/**********************************/
+
+.contenido-productos {
+    padding: 0 1rem;
 }
 
-.form-group {
-    margin-bottom: 1.5rem;
+
+.product-card {
+    border: 2px solid var(--color1);
+    border-radius: 5px;
+    margin-bottom: 1rem;
 }
 
-.btn-block {
+.product-card .card-body {
+    padding: 1rem;
+}
+
+.card-text{
+    text-align: center;
+}
+
+.quantity-selector {
+    align-items: center;   
+    display: flex;
+    gap: 0.5rem;
     margin-top: 1rem;
 }
 
-.btn-primary {
+.incrementar-disminuir {
+  background-color: var(--color1);
+  border-radius: 0.5rem;
+  font-size: large;
+  color: white;
+}
+
+.incrementar-disminuir:hover {
+  background-color: #cf0034;
+  border-radius: 0.5rem;
+  font-size: large;
+  color: white;
+}
+
+.quantity-selector .form-control {
+    max-width: 50px;
+    text-align: center;
+}
+
+.price {
+    color: var(--color1);
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.btn-opcion {
     color: white;
     background-color: var(--color1);
-    margin: 0 auto; 
+    border-radius: 0.5rem;
+    margin: 1rem 0;
     padding: 0.375rem 0.75rem;
     size: var(--tam-letra3);
-    width: 100%; 
-    height: 3rem;
-    transition-duration: 250ms;
 }
 
-.btn-primary:hover {
-    background-color: #cf0034;
+.btn-opcion:hover {
+  background-color: #cf0034;
+    color: white;
 }
 
-.create-account-link {
-    color: #D81159;
-    text-decoration: none;
+
+
+/*************************************/
+/*****     RESUMEN DE COMPRA     *****/
+/*************************************/
+
+.resumen {
+    border: 2px solid var(--color1);
+    border-radius: 1rem;
+    padding: 1rem;
 }
 
-.create-account-link:hover {
-    text-decoration: underline;
+.item-resumen {
+    margin-bottom: 0.5rem;
 }
 
-.privacy-link {
-    font-size: 0.8rem;
-    color: var(--color1);
-    text-decoration: none;
+.total strong {
+    font-size: 1.2rem;
 }
 
-.privacy-link:hover {
-    text-decoration: underline;
+.resumen button {
+    color: white;
+    background-color: var(--color1);
+    border-radius: 0.5rem;
+    margin: 1rem 0;
+    padding: 0.375rem 0.75rem;
+    size: var(--tam-letra3);
+}
+
+.resumen button:hover {
+  background-color: #cf0034;
 }
 
 /**********************************************/
