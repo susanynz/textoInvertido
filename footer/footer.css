@@ -66,6 +66,47 @@ body {
 
 
 /************** footer ***************/
+.descripcion-section img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+    width: 150px;
+    cursor: pointer;
+}
+
+  /* Titulo tejemos*/
+  .descripcion-section h4 {
+    position: relative;
+    margin-bottom: 0;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    /* Titulo descubre*/
+    .descripcion-section h3 {
+      position: relative;
+      margin-bottom: 0;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+  
+    .descripcion-section.descripcion-content {
+      align-items: center;
+      text-align: center;
+    }
+  
+    /*Guión bajo titulo descubre*/
+    h3:after {
+      content: "";
+      display: block;
+      width: 100%; /* Ajustar el ancho al 100% */
+      max-width: 500px; /* Establecer un ancho máximo */
+      height: 5px;
+      background: #ff0646;
+      margin: 10px auto;
+  }
+
+
+/************** footer ***************/
 footer {
     background-color: #000;
     color: #fff;
