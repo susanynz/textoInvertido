@@ -188,6 +188,7 @@ body.darkmode {
     background-color: var(--dark-color);
 }
 
+
 body.darkmode .estilo-header {
     background: var(--dark-color);
 }
@@ -546,4 +547,49 @@ footer {
 /**********************************************/
 
 
-  
+
+/*********** Cuadro de texto *******/
+.darkmode .privacy-box{
+  background-color: var(--dark-color);
+}
+
+.darkmode {
+  .privacy-box h2 {
+    color: #ffffff;
+  }
+  }
+
+.darkmode {
+  .privacy-box h4 {
+    color: #ffffff;
+  }
+  }
+
+.darkmode {
+  .privacy-box p {
+    color: #ffffff;
+  }
+  }
+
+.privacy-box {
+  background-color: #ffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.privacy-box {
+  text-align: justify;
+}
+
+.privacy-box {
+  text-decoration: none;
+}
+
+.privacy-box h2 {
+  color: var(--color6);
+}
+.privacy-box h4 {
+  color: var(--color6);
+}
