@@ -1,12 +1,13 @@
 const translations = {
     "es": {
-      "btn-registro": "Registrarse",
+      "btn-register": "Registrarse",
       "btn-login": "Inicia sesión",
       
     },
     "en": {
-      "btn-registro": "Sign up",
-      "btn-login": "Log in"
-      // otros textos aquí...
+      "btn-register": "Sign up",
+      "btn-login": "Log in",
+      
     }
-  };
+};
+

@@ -196,7 +196,7 @@ document.addEventListener("DOMContentLoaded", () => {
         };
 
         showAlert(JSON.stringify(userData));
-        return true;
+        return userData;
     };
 
     /**************************************/
@@ -208,7 +208,7 @@ document.addEventListener("DOMContentLoaded", () => {
     form.onsubmit = (e) => {
         e.preventDefault();
         if (dataValidation()) {
-            console.log("Todo salió bien");
+            
         }
     };
 });
