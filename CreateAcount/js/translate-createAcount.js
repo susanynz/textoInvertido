@@ -40,6 +40,11 @@ const translations = {
       "btn-create": "Crear cuenta",
       "questionAccount": "¿Ya tienes una cuenta? Inicia sesión",
       "privacylink": "Privacidad",
+      "user-name": "Nombre completo",
+      "user-phone": "Teléfono",
+      "user-email": "Correo",
+      "user-password": "Contraseña",
+      "repeat-password": "Repita contraseña",
       // FOOTER
       "textfooter1": "Tejemos historias de tradición y pasión",
       "textfooter2": "Descubre la autenticidad de México en cada detalle",
@@ -69,6 +74,11 @@ const translations = {
       "btn-create": "Create acount",
       "questionAccount": "Do you already have an account? Log in",
       "privacylink": "Privacy",
+      "user-name": "Full name",
+      "user-phone": "Phone",
+      "user-email": "Email",
+      "user-password": "Password",
+      "repeat-password": "Repeat password",
       // FOOTER
       "textfooter1": "We weave stories of tradition and passion",
       "textfooter2": "Discover the authenticity of Mexico in every detail",
@@ -91,7 +101,13 @@ const changeLanguage = (lang) => {
   for (const key in translations[lang]) {
     const element = document.getElementById(key);
     if (element) 
-      element.textContent = translations[lang][key];
+      if (element.tagName === "INPUT" && element.type !== "submit")
+        // Si es un input y no es de tipo submit, cambiar el placeholder
+        element.placeholder = translations[lang][key];
+      else
+        // Para todos los demás elementos, cambiar el texto
+        element.textContent = translations[lang][key];
+    
   }
 }
 
