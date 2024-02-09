@@ -52,6 +52,33 @@ btn.addEventListener('click', () => {
     }, 500)
 })
 
+/****************************/
+/* Boton para cambiar idioma*/
+/****************************/
+
+const languageButton = document.getElementById('toggleLanguage');
+const languageFlag = document.getElementById('languageFlag');
+
+function toggleFlag() {
+    if (languageFlag.src.includes('mexico.png')) {
+        languageFlag.src = '../Imagenes/eu.png';
+        languageFlag.alt = 'Bandera de Estados Unidos';
+    } else {
+        languageFlag.src = '../Imagenes/mexico.png';
+        languageFlag.alt = 'Bandera de México';
+    }
+}
+
+languageButton.addEventListener('click', (e) => {
+    e.preventDefault();
+    languageFlag.classList.add('hidden');
+    setTimeout(() => {
+        toggleFlag();
+        languageFlag.classList.remove('hidden');
+    }, 100);
+});
+
+
 /*Productos de tienda*/
 let productosMostrados = 0;
 const productosPorPagina = 15;
@@ -170,14 +197,6 @@ async function mostrarMasProductos() {
 
     const btnMostrarMas = document.querySelector('.btn-mostrar-mas');
     btnMostrarMas.style.display = productos.length > productosMostrados ? 'block' : 'none';
-}
-
-function showButtons(box) {
-    box.querySelector('.options').style.display = 'flex';
-}
-
-function hideButtons(box) {
-    box.querySelector('.options').style.display = 'none';
 }
 
 function echarAlHuacal() {

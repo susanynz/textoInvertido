@@ -582,7 +582,20 @@ body {
 }
 
 
+/* .darkmode .artesano-description{
+  background-color: var(--dark-color);
+}
 
+.darkmode {
+  artesano-description h2 {
+    color: var(--light-color);
+  }
+  }
+.darkmode {
+  artesano-description p {
+    color: #ffffff;
+  }
+  } */
 
 
 

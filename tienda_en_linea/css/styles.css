@@ -258,6 +258,27 @@ body.darkmode .heading_container h3::after {
     color: var(--dark-icon-color);
 }
 
+/****************/
+/* BOTON IDIOMA */
+/****************/
+
+.btn-idioma {
+    width: 5em;
+    height: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-idioma img {
+    max-width: 100%;
+    max-height: 100%;
+    transition: opacity 0.3s ease;
+}
+
+.hidden {
+    opacity: 0;
+}
 
 /**********************************************/
 /*******       BANNER ROSA CON TÍTULO   **********/
@@ -385,14 +406,16 @@ body.darkmode .heading_container h3::after {
     padding: 10px;
 }
 
+
 .producto {
     border: 1px solid #ddd;
     padding: 10px;
-    margin: 10px;
+    /*margin: 10px;*/
     text-align: center;
     display: inline-block;
     position: relative;
 }
+
 
 .producto .card .option_container {
     position: absolute;
@@ -485,7 +508,6 @@ body.darkmode .dark-card {
     background-color: var(--dark-color);
     color: var(--light-color);
     border: 1px solid var(--color1);
-    /* Ajusta según sea necesario */
 }
 
 body.darkmode .dark-card .option_container {
