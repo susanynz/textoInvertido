@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="./css/createAcount.css">
   <!--Funcionalidad con JS-->
   <script async defer src="./js/createAcount.js"></script>
+  <script async defer src="./js/translate-createAcount.js"></script>
 </head>
 
 <body>
@@ -46,8 +47,8 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
           <ul class="navbar-nav align-items-center justify-content-between">
 
-            <li class="nav-item active">
-              <a class="nav-link" href="/index/index.html" id="homeLink">INICIO</a>
+            <li class="nav-item ">
+              <a class="nav-link" href="/index/index.html" id="homelink">INICIO</a>
             </li>
 
             <li class="nav-item dropdown">
@@ -56,26 +57,26 @@
                 TIENDA
               </a>
               <ul class="dropdown-menu estilos-navbar" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="#">ARTESANIAS</a></li>
-                <li><a class="dropdown-item" href="#">ROPA ARTESANAL</a></li>
-                <li><a class="dropdown-item" href="#">LICORES</a></li>
+                <li><a class="dropdown-item" href="#" id="handicraftslink">ARTESANIAS</a></li>
+                <li><a class="dropdown-item" href="#" id="clothinglink">ROPA ARTESANAL</a></li>
+                <li><a class="dropdown-item" href="#" id="liquorslink">LICORES</a></li>
               </ul>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="/QuienesSomos/QuienesSomos.html">QUIENES SOMOS</a>
+              <a class="nav-link" href="/QuienesSomos/QuienesSomos.html" id="aboutlink">QUIENES SOMOS</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="/DescubreMéxico/descubreMexico.html">DESCUBRE MÉXICO</a>
+              <a class="nav-link" href="/DescubreMéxico/descubreMexico.html" id="discoverlink">DESCUBRE MÉXICO</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="/Artesanos/Artesanos.html">CONOCE A LOS ARTESANOS</a>
+              <a class="nav-link" href="/Artesanos/Artesanos.html" id="artisanslink">CONOCE A LOS ARTESANOS</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="/Contacto/contact.html">CONTACTO</a>
+              <a class="nav-link" href="/Contacto/contact.html" id="contactlink">CONTACTO</a>
             </li>
 
             <li class="nav-item">
@@ -116,7 +117,7 @@
     <div class="d-flex justify-content-center">
       <div class="card">
         <div class="card-body">
-          <h2 class="card-title text-center mt-4">Crear cuenta</h2>
+          <h2 id="title" class="card-title text-center mt-4">Crear cuenta</h2>
           <form class="m-4" novalidate autocomplete="off">
             <div class="form-group">
               <input id="user-name" type="text" class="form-control" placeholder="Nombre completo">
@@ -134,13 +135,13 @@
               <input id="repeat-password" type="password" class="form-control" placeholder="Repita contraseña">
             </div>
 
-            <button type="submit" class="btn btn-primary btn-block justify-content-center">Registrarse</button>
+            <button type="submit" class="btn btn-primary btn-block justify-content-center" id="btn-create">Registrarse</button>
             <div class="text-center mt-3">
-              <a href="/Login/login.html" class="create-account-link">¿Ya tienes una cuenta? Inicia sesión</a>
+              <a href="/Login/login.html" class="create-account-link" id="questionAccount">¿Ya tienes una cuenta? Inicia sesión</a>
             </div>
           </form>
           <div class="text-start mt-4">
-            <a href="/Politicas/politicasPrivacidad.html" class="privacy-link">Privacidad</a>
+            <a href="/Politicas/politicasPrivacidad.html" class="privacy-link id="privacylink">Privacidad</a>
           </div>
         </div>
       </div>
@@ -152,9 +153,9 @@
     <!-- Sección de Descripción -->
     <div class="descripcion-section">
         <div class="descripcion-content container">
-            <h4> Tejemos historias de tradición y pasión </h4> 
+            <h4 id="textfooter1"> Tejemos historias de tradición y pasión </h4> 
             <div class="container"> 
-                <h3 class="text-center"> Descubre la autenticidad de México en cada detalle</h3>
+                <h3 class="text-center" id="textfooter2"> Descubre la autenticidad de México en cada detalle</h3>
             </div>
             <a href="#top">
                 <img src="../Imagenes/logo.png" alt="México" class="img-fluid mt-2">
@@ -166,22 +167,22 @@
         <div class="row">
             <div class="col-lg-4 footer-left">
                 <ul>
-                    <li><a href="#" class="footer-link">Términos y condiciones</a></li>
-                    <li><a href="#" class="footer-link">Servicio al cliente</a></li>
-                    <li><a href="/QuienesSomos/QuienesSomos.html" class="footer-link">Conócenos</a></li>
-                    <li><a href="/Politicas/politicasPrivacidad.html" class="footer-link">Políticas de privacidad</a></li>
+                    <li><a href="#" class="footer-link" id="footerlink1">Términos y condiciones</a></li>
+                    <li><a href="#" class="footer-link" id="footerlink2">Servicio al cliente</a></li>
+                    <li><a href="/QuienesSomos/QuienesSomos.html" class="footer-link" id="footerlink3">Conócenos</a></li>
+                    <li><a href="/Politicas/politicasPrivacidad.html" class="footer-link" id="footerlink4">Políticas de privacidad</a></li>
                 </ul>
             </div>
             <div class="col-lg-4 footer-center">
-                <p>Recibe información exclusiva y promociones vía email</p>
+                <p id="textfooter3">Recibe información exclusiva y promociones vía email</p>
 
-                <a href="../Login/login.html">
+                <a href="/Login/login.html">
                     <button id="subscribeButton">Suscríbete</button>
                 </a>
 
             </div>
             <div class="col-lg-4 footer-right">
-                <a href="#" class="footer-link">Métodos de pago</a>
+                <a href="#" class="footer-link" id="textfooter4">Métodos de pago</a>
                 <div class= "img-pagos-container">
                 <img class="img-pagos" src="/Imagenes/pagos.jpg" alt="logo-mercado-pago">
                 </div>

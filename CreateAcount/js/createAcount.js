@@ -52,31 +52,6 @@ btn.addEventListener('click', () => {
     }, 500)
 })
 
-/****************************/
-/* Boton para cambiar idioma*/
-/****************************/
-
-document.getElementById('toggleLanguage').addEventListener('click', (e) => {
-    const languageFlag = document.getElementById('languageFlag');
-
-    const toggleFlag = () => {
-        if (languageFlag.src.includes('mexico.png')) {
-            languageFlag.src = '../Imagenes/eu.png';
-            languageFlag.alt = 'Bandera de Estados Unidos';
-        } else {
-            languageFlag.src = '../Imagenes/mexico.png';
-            languageFlag.alt = 'Bandera de México';
-        }
-    }
-    e.preventDefault();
-    languageFlag.classList.add('hidden');
-    setTimeout(() => {
-        toggleFlag();
-        languageFlag.classList.remove('hidden');
-    }, 100);
-});
-
-
 /**************************************/
 /* BOTÓN REGISTRARSE                  */
 /**************************************/
