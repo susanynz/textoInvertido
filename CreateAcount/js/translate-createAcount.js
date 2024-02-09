@@ -92,6 +92,7 @@ const translations = {
   }
 };
 
+
 const changeLanguage = (lang) => {
 
   // Actualizar el idioma en el almacenamiento local
